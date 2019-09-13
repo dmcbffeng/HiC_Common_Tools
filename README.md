@@ -59,6 +59,7 @@
  >>> normalized_mat_1 = normalization(HiC_mat, method='log', base=10)
  >>> normalized_mat_2 = normalization(HiC_mat, method='VC_SQRT')
  ```
+ Normalize Hi-C contact maps, return normalized map.
  - method: 
    - "log": take log(x + 1) for each value (make sure 0 is still 0).
    Additional argument: base (default: e), base of logarithm.
@@ -77,16 +78,25 @@
  >>> visualize_one_contact_map(mat, vmax=1, save_path=None)
  >>> visualize_two_contact_maps(mat1, mat2, vmax=1, save_path='compare.png')
  ```
+ Visualize one Hi-C map with heatmap or compare two Hi-C maps
+ (in upper / lower triangle in the same heatmap).
  - mat / mat1 / mat2: (numpy.array, scipy.sparse.coo_matrix)
  - vmax: (int or float) maximum value for heatmap.
  - save_path: (str or None) default: None. Path for saving the figure.
  If None, it will not be saved.
  
  **Calculate Insulation Scores**
- 
+ - To be finished
  
  **Find A/B Compartments**
- 
+ ```config
+ >>> from AB_compartment import AB_compartment
+ >>> ab = AB_compartment(mat)
+ ```
+ Find A/B compartments with the input Hi-C contact map.
+ Return a 1-D vector which has the same length with input map,
+ sign (+ / -) indicates A or B compartment.
+ - mat: (numpy.array, scipy.sparse.coo_matrix)
  
  **What other?**
  - TAD?
