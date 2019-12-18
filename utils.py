@@ -8,6 +8,8 @@ from scipy.sparse import coo_matrix, load_npz
 
 
 def file_line_generator(file, chrom=None, header=False, format=None):
+    if len(format) == 3:
+        format = [0, format[0], 0, format[1], format[2]]
     count = 0
     f = open(file)
     if header:
