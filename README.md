@@ -22,7 +22,7 @@
 You can install the package with following command:
   ```console
     $ git clone https://github.com/dmcbffeng/HiC_Common_Tools.git
-    $ cd scHiCTools
+    $ cd HiC_Common_Tools
     $ python setup.py install
   ```
 

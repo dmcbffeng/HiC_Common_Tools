@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27be6013-c272-46a9-941a-8d4cae56884e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/HiC_Tools_for_Lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HiC_Tools_for_Lab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/tst.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/tst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/loading/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/loading/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/loading/loading.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/loading/loading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/normalization/normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/normalization/normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/structures/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/structures/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/heatmap_v2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +42,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-1052">
-                <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+              <first_editor relative-caret-position="228">
+                <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -574,8 +560,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1052">
-            <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+          <first_editor relative-caret-position="228">
+            <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
