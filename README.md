@@ -2,7 +2,7 @@
 ## -- [NOT FINISHED YET] -- ##
 @Author: Fan Feng
 
-[1 Installation](#Installation)\
+[1 Installation](#installation)\
 [2 Loading Hi-C Contact Maps](#load-hi-c-contact-maps)\
 [3 Normalization](#normalization)\
 [4 Visualization](#visualization)\
@@ -10,7 +10,7 @@
 [6 Comparing Contact Maps](#comparing-contact-maps)
 
 
-#Installation
+# Installation
 **Required Packages**
 - numpy
 - scipy
@@ -26,7 +26,7 @@ You can install the package with following command:
   ```
 
 
-#Load Hi-C Contact Maps
+# Load Hi-C Contact Maps
  **Supported Formats**
  - npy: numpy.array / numpy.matrix
  - npz: scipy.sparse.coo_matrix / csr_matrix
@@ -73,7 +73,7 @@ You can install the package with following command:
  - sparse: (bool) default: True. If True, store with scipy.sparse.csr_matrix; if false, with numpy.array.
  
 
-#Normalization
+# Normalization
  ```config
  >>> from pyHiC.normalization import normalization
  >>> normalized_mat_1 = normalization(HiC_mat, method='log', base=10)
@@ -93,7 +93,7 @@ You can install the package with following command:
    - "OE": each value divided by the average of its corresponding strata (diagonal line)
  
 
-#Visualization
+# Visualization
  ```config
  >>> from pyHiC.visualization import *
  >>> visualize_HiC_epigenetics(HiC, epis, output, fig_width=12.0,
@@ -138,7 +138,7 @@ You can install the package with following command:
  If None, it will not be saved.
 
 
-#Structure Calling
+# Structure Calling
  **Find A/B Compartments**
  ```config
  >>> from pyHiC.structures import AB_compartment
@@ -158,7 +158,7 @@ You can install the package with following command:
  - 
 
 
-#Comparing Contact Maps
+# Comparing Contact Maps
  **HiCRep**
  
  ..to be done...
