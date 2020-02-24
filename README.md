@@ -2,13 +2,22 @@
 ## -- [NOT FINISHED YET] -- ##
 @Author: Fan Feng
 
-### Required Packages
+[1 Installation](#Installation)\
+[2 Loading Hi-C Contact Maps](#load-hi-c-contact-maps)\
+[3 Normalization](#normalization)\
+[4 Visualization](#visualization)\
+[5 Structure Calling](#structure-calling)\
+[6 Comparing Contact Maps](#comparing-contact-maps)
+
+
+#Installation
+**Required Packages**
 - numpy
 - scipy
 - matplotlib
 - seaborn
 
-### Install from GitHub ###
+**Install from GitHub**\
 You can install the package with following command:
   ```console
     $ git clone https://github.com/dmcbffeng/HiC_Common_Tools.git
@@ -17,7 +26,7 @@ You can install the package with following command:
   ```
 
 
-### Load Hi-C Contact Maps
+#Load Hi-C Contact Maps
  **Supported Formats**
  - npy: numpy.array / numpy.matrix
  - npz: scipy.sparse.coo_matrix / csr_matrix
@@ -64,14 +73,14 @@ You can install the package with following command:
  - sparse: (bool) default: True. If True, store with scipy.sparse.csr_matrix; if false, with numpy.array.
  
 
-### Normalization
+#Normalization
  ```config
  >>> from pyHiC.normalization import normalization
  >>> normalized_mat_1 = normalization(HiC_mat, method='log', base=10)
  >>> normalized_mat_2 = normalization(HiC_mat, method='VC_SQRT')
  ```
  Normalize Hi-C contact maps, return normalized map.
- - method: 
+ - method:
    - "log": take log(x + 1) for each value (make sure 0 is still 0).
    Additional argument: base (default: e), base of logarithm.
    - "power": take x^p for each value (usually 0 < p < 1).
@@ -83,7 +92,8 @@ You can install the package with following command:
    - "KR": the sum of each row / column is one
    - "OE": each value divided by the average of its corresponding strata (diagonal line)
  
-### Visualization
+
+#Visualization
  ```config
  >>> from pyHiC.visualization import *
  >>> visualize_HiC_epigenetics(HiC, epis, output, fig_width=12.0,
@@ -115,7 +125,6 @@ You can install the package with following command:
  - interval_after_heatmap (float): the ratio of (interval between heatmap and 1D signals) and (figure width). Default: 0.05
  - interval_between_epi (float): the ratio of (interval between 1D signals) and (figure width). Default: 0.01
 
- 
  ```config
  >>> from pyHiC.visualization import *
  >>> visualize_one_contact_map(mat, vmax=1, save_path=None)
@@ -128,7 +137,8 @@ You can install the package with following command:
  - save_path: (str or None) default: None. Path for saving the figure.
  If None, it will not be saved.
 
-### Call Structures
+
+#Structure Calling
  **Find A/B Compartments**
  ```config
  >>> from pyHiC.structures import AB_compartment
@@ -147,7 +157,8 @@ You can install the package with following command:
  - Loop? (High computational burden...)
  - 
 
-### Comparing contact maps
+
+#Comparing Contact Maps
  **HiCRep**
  
  ..to be done...
