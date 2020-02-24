@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27be6013-c272-46a9-941a-8d4cae56884e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" afterDir="false" />
-    </list>
+    <list default="true" id="27be6013-c272-46a9-941a-8d4cae56884e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="486">
+              <first_editor relative-caret-position="661">
                 <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
               </first_editor>
               <second_editor />
@@ -350,7 +347,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18959913" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18959913" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -617,7 +614,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="486">
+          <first_editor relative-caret-position="661">
             <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
           </first_editor>
           <second_editor />
