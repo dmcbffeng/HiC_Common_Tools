@@ -1,12 +1,10 @@
 import numpy as np
-from scipy.sparse import coo_matrix
-from normalization import normalization
+from scipy.linalg import eigh
+from ..normalization import normalization
 
 
-def AB_compartment(mat):
-    sparse = isinstance(mat, coo_matrix)
-    if sparse:
-        mat = mat.toarray()
+def AB_compartment(mat, n_th_eigenvalue=1):
+    assert n_th_eigenvalue in [1, 2]
 
     norm_mat = normalization(mat, 'OE')
     # Remove zeros
@@ -22,13 +20,11 @@ def AB_compartment(mat):
     degree_ = np.diag(1 / np.sqrt(np.sum(norm_mat, axis=1)))
 
     norm_laplacian = np.eye(len(norm_mat)) - degree_.dot(norm_mat).dot(degree_)
-    eigen_val, eigen_vec = np.linalg.eig(norm_laplacian)
+    eigen_val, eigen_vec = eigh(norm_laplacian, eigvals=(0, 1))
 
-    ab_comp = eigen_vec[:, 1]
+    ab_comp = eigen_vec[:, n_th_eigenvalue - 1]
     for zero in zeros:
         ab_comp = np.insert(ab_comp, zero, 0)
 
     return ab_comp
-
-
 

@@ -4,6 +4,7 @@ Visualize a given region of HiC contact map or compare two contact maps.
 import numpy as np
 from scipy.sparse import coo_matrix
 import matplotlib.pyplot as plt
+from matplotlib.gridspec import GridSpec
 import seaborn as sns
 
 

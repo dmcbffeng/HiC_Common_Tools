@@ -1,14 +1,14 @@
 import numpy as np
-from scipy.sparse import coo_matrix
+import scipy.sparse as sp
 
 
 def normalization(mat, method, **kwargs):
     if method not in ['log', 'power', 'OE', 'KR', 'VC', 'VC_SQRT']:
         print("Normalization operation not in ['OE', 'KR', 'VC', 'VC_SQRT']. Normalization omitted.")
 
-    sparse = isinstance(mat, coo_matrix)
+    sparse = isinstance(mat, sp.csr_matrix)
     if sparse:
-        mat = mat.toarray()
+        mat = mat.todense()
 
     if method == 'log':
         if 'base' not in kwargs:
@@ -86,6 +86,6 @@ def normalization(mat, method, **kwargs):
             mat = np.insert(mat, zero, 0, axis=1)
 
     if sparse:
-        mat = coo_matrix(mat)
+        mat = sp.csr_matrix(mat)
     return mat
 

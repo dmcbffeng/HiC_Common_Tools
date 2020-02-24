@@ -1,4 +1,6 @@
-# Commonly-used HiC Operations for Liu Lab (Python 3)
+# Commonly-used HiC Operations for Liu Lab (Python 3) #
+## -- [NOT FINISHED YET] -- ##
+@Author: Fan Feng
 
 ### Required Packages
 - numpy
@@ -6,10 +8,19 @@
 - matplotlib
 - seaborn
 
+### Install from GitHub ###
+You can install the package with following command:
+  ```console
+    $ git clone https://github.com/liu-bioinfo-lab/scHiCTools.git
+    $ cd scHiCTools
+    $ python setup.py install
+  ```
+
+
 ### Load Hi-C Contact Maps
  **Supported Formats**
  - npy: numpy.array / numpy.matrix
- - npz: scipy.sparse.coo_matrix
+ - npz: scipy.sparse.coo_matrix / csr_matrix
  - Short
  ```
  <position1> <position2> <score>
@@ -22,7 +33,7 @@
  ```
  <chromosome1> <position1> <chromosome2> <position2>
  ```
- - .hic format: JuiceTools can process it into short format with "dump" function.
+ - .hic format: JuiceTools can process it into "short" format with "dump" function.
  - Other formats: Simply give the indices (start from 1) in the order of
  "chromosome1 - position1 - chromosome2 - position2 - score" or
  "chromosome1 - position1 - chromosome2 - position2" or
@@ -35,27 +46,28 @@
  
  **Load into (Sparse) Matrices**
  ```console
- >>> from utils import load_HiC
+ >>> from pyHiC.loading import load_HiC
  >>> HiC_mat = load_HiC(
  ...         file='ESC_chr1.txt', format='short',
  ...         custom_format=None, header=False,
  ...         chromosome=None, start_pos=0, end_pos=-1,
- ...         resolution=500000, sparse=False)
+ ...         resolution=500000, sparse=True)
  ```
  - file: (str) file name;
  - format: (str or None) default: None. "short" / "Short", "long" / "Long", "noscore" / "NoScore", "npy" or "npz". If customized, leave it "None". 
  - custom_format: (str or list or None) default: None. For customized input, provide the indices like "2356"".
  - header: (bool or None) default: None. For customized input, whether the file has a header line.
  - chromosome: (str) default: None. For formats other than "short", give the chromosome you would like to extract, eg. "chr1".
- - start_pos & end_pos: (int) default: 0 and -1. If calculating full chromosome, use 0 & -1 (default values).
+ - start_pos & end_pos: (int) default: 0 and -1. (0: start, -1: end).
  - resolution: (int) default: 10000.
- - sparse: (bool) default: False. If True, store with scipy.sparse.coo_matrix; if false, with numpy.array.
+ - gzip (bool): whether zipped file. Default: False
+ - sparse: (bool) default: True. If True, store with scipy.sparse.csr_matrix; if false, with numpy.array.
  
 
 ### Functions
  **Normalization**
  ```config
- >>> from normalization import normalization
+ >>> from pyHiC.normalization import normalization
  >>> normalized_mat_1 = normalization(HiC_mat, method='log', base=10)
  >>> normalized_mat_2 = normalization(HiC_mat, method='VC_SQRT')
  ```
