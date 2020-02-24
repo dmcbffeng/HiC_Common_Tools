@@ -14,6 +14,7 @@
 **Required Packages**
 - numpy
 - scipy
+- networkx
 - matplotlib
 - seaborn
 
