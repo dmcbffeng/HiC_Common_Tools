@@ -27,7 +27,7 @@ You can install the package with following command:
   ```
 
 
-# Load Hi-C Contact Maps
+# Loading Hi-C Contact Maps
  **Supported Formats**
  - npy: numpy.array / numpy.matrix
  - npz: scipy.sparse.coo_matrix / csr_matrix
