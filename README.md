@@ -81,23 +81,24 @@ You can install the package with following command:
  >>> normalized_mat_2 = normalization(HiC_mat, method='VC_SQRT')
  ```
  Normalize Hi-C contact maps, return normalized map.
- - method:
-   - "log": take log(x + 1) for each value (make sure 0 is still 0).
-   Additional argument: base (default: e), base of logarithm.
-   - "power": take x^p for each value (usually 0 < p < 1).
-   Additional argument: power (default: 0.5), the power "p".
+ - method (str):
+   - "OE": each value divided by the average of its corresponding strata (diagonal line)
    - "VC": each value divided by the sum of corresponding row then
    divided by the sum of corresponding column
    - "VC_SQRT": each value divided by the sqrt of the sum of corresponding row then
    divided by the sqrt of the sum of corresponding column
    - "KR": the sum of each row / column is one
-   - "OE": each value divided by the average of its corresponding strata (diagonal line)
- 
+   - "IC": iterative correction
+   
+ For KR and IC normalization, optional arguments include:
+   - max_iteration (int): default: 50
+   - tolerance (float): default: 1e-5
+   - verbose (int, 1 or 0): whether print iteration information. default: 1 
 
 # Visualization
  ```config
  >>> from pyHiC.visualization import *
- >>> visualize_HiC_epigenetics(HiC, epis, output, fig_width=12.0,
+ >>> visualize_HiC_epigenetics(HiC_mat, epis, 'output0.png', fig_width=12.0,
  ...        vmin=0, vmax=None, cmap='Reds', colorbar=True,
  ...        colorbar_orientation='vertical',
  ...        epi_labels=None, x_ticks=None, fontsize=24,
@@ -128,15 +129,26 @@ You can install the package with following command:
 
  ```config
  >>> from pyHiC.visualization import *
- >>> visualize_one_contact_map(mat, vmax=1, save_path=None)
- >>> visualize_two_contact_maps(mat1, mat2, vmax=1, save_path='compare.png')
+ >>> visualize_HiC_triangle(HiC, 'output1.png', fig_size=(12, 6.5),
+ ...    vmin=0, vmax=None, cmap='Reds', colorbar=True,
+ ...    colorbar_orientation='vertical',
+ ...    x_ticks=None, fontsize=24)
+ >>> visualize_HiC_triangle(HiC, 'output2.png', fig_size=(12, 6.5),
+ ...    vmin=0, vmax=None, cmap='Reds', colorbar=True,
+ ...    colorbar_orientation='vertical',
+ ...    x_ticks=None, fontsize=24)
  ```
- Visualize one Hi-C map with heatmap or compare two Hi-C maps
- (in upper / lower triangle in the same heatmap).
- - mat / mat1 / mat2: (numpy.array, scipy.sparse.coo_matrix)
- - vmax: (int or float) maximum value for heatmap.
- - save_path: (str or None) default: None. Path for saving the figure.
- If None, it will not be saved.
+ Visualize one HiC contact map in triangle or square shape
+  - HiC (numpy.array): Hi-C contact map, only upper triangle is used.
+  - output (str): the output path. Must in a proper format (e.g., 'png', 'pdf', 'svg', ...).
+  - fig_size (tuple): (width, height). Default: (12, 6.5) for triangle and (12, 12) for square
+  - vmin (float): min value of the colormap. Default: 0
+  - vmax (float): max value of the colormap. Will use the max value in Hi-C data if not specified.
+  - cmap (str or plt.cm): which colormap to use. Default: 'Reds'
+  - colorbar (bool): whether to add colorbar for the heatmap. Default: True
+  - colorbar_orientation (str): ONLY FOR TRIANGLES, "horizontal" or "vertical". Default: "vertical"
+  - x_ticks (list): a list of strings. Will be added at the bottom. THE FIRST TICK WILL BE AT THE START OF THE SIGNAL, THE LAST TICK WILL BE AT THE END.
+  - fontsize (int): font size. Default: 24
 
 
 # Structure Calling

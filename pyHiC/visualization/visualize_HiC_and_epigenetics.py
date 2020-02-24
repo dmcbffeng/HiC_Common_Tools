@@ -4,6 +4,7 @@ Visualize matched HiC and epigenetic signals in one figure
 @author: Fan Feng
 """
 import numpy as np
+import scipy.sparse as sp
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
@@ -39,6 +40,9 @@ def visualize_HiC_epigenetics(HiC, epis, output, fig_width=12.0,
 
     No return. Save a figure only.
     """
+    if isinstance(HiC, sp.csr_matrix):
+        HiC = HiC.toarray()
+
     # Make sure the lengths match
     len_epis = [len(epi) for epi in epis]
     if max(len_epis) != min(len_epis) or max(len_epis) != len(HiC):

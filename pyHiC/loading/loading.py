@@ -65,7 +65,7 @@ def load_HiC(file, format=None, custom_format=None, header=False,
         else:
             mat = sp.load_npz(file)
             if not sparse:
-                mat = mat.todense()
+                mat = mat.toarray()
             if sparse and not isinstance(mat, sp.csr_matrix):
                 mat = mat.tocsr()
 
@@ -112,6 +112,6 @@ def load_HiC(file, format=None, custom_format=None, header=False,
 
         mat = nx.adj_matrix(G)
         if not sparse:
-            mat = mat.todense()
+            mat = mat.toarray()
     return mat
 

@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27be6013-c272-46a9-941a-8d4cae56884e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/HiC_Tools_for_Lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HiC_Tools_for_Lab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/tst.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/tst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/loading/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/loading/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/loading/loading.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/loading/loading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/normalization/normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/normalization/normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/structures/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/structures/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/heatmap_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="-1893">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#86#104#0" expanded="true" />
               </folding>
@@ -25,23 +39,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyHiC/visualization/__init__.py">
+        <entry file="file://$PROJECT_DIR$/example/example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/test.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="198">
-                <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-1052">
+                <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,10 +65,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyHiC/structures/AB_compartment.py">
+        <entry file="file://$PROJECT_DIR$/example/tst.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="114">
+              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -61,27 +77,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyHiC/normalization/normalization.py">
+        <entry file="file://$PROJECT_DIR$/pyHiC/structures/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyHiC/structures/insulation_score.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="11" lean-forward="true" selection-start-line="9" selection-end-line="28" selection-end-column="11" />
+              <folding>
+                <element signature="e#81#99#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyHiC/loading/loading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="387">
+              <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
               <folding>
                 <element signature="e#92#110#0" expanded="true" />
               </folding>
@@ -90,21 +110,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/pyHiC/normalization/normalization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="-1471">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+        <entry file="file://$PROJECT_DIR$/pyHiC/structures/AB_compartment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="411">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding>
-                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,26 +161,33 @@
         <option value="$PROJECT_DIR$/heatmap_test.py" />
         <option value="$PROJECT_DIR$/visualize_HiC_and_epigenetics.py" />
         <option value="$PROJECT_DIR$/heatmap_v2.py" />
-        <option value="$PROJECT_DIR$/pyHiC/loading/__init__.py" />
         <option value="$PROJECT_DIR$/tst.py" />
-        <option value="$PROJECT_DIR$/pyHiC/normalization/normalization.py" />
         <option value="$PROJECT_DIR$/pyHiC/visualization/visualization.py" />
         <option value="$PROJECT_DIR$/pyHiC/visualization/__init__.py" />
         <option value="$PROJECT_DIR$/pyHiC/normalization/__init__.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_eQTL.py" />
+        <option value="$PROJECT_DIR$/pyHiC/__init__.py" />
+        <option value="$PROJECT_DIR$/pyHiC/loading/__init__.py" />
+        <option value="$PROJECT_DIR$/pyHiC/structures/__init__.py" />
+        <option value="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" />
+        <option value="$PROJECT_DIR$/pyHiC/normalization/interative_correction.py" />
         <option value="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py" />
+        <option value="$PROJECT_DIR$/pyHiC/normalization/iterative_correction.py" />
         <option value="$PROJECT_DIR$/pyHiC/loading/loading.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/pyHiC/structures/AB_compartment.py" />
+        <option value="$PROJECT_DIR$/example/tst.py" />
+        <option value="$PROJECT_DIR$/pyHiC/normalization/normalization.py" />
+        <option value="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py" />
+        <option value="$PROJECT_DIR$/example/example.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1107" />
-    <option name="height" value="596" />
+    <option name="y" value="24" />
+    <option name="width" value="1388" />
+    <option name="height" value="755" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -169,22 +199,22 @@
         <subPane>
           <expand>
             <path>
-              <item name="HiC_Tools_for_Lab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiC_Tools_for_Lab" type="462c0819:PsiDirectoryNode" />
+              <item name="HiC_common_tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiC_common_tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiC_Tools_for_Lab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiC_Tools_for_Lab" type="462c0819:PsiDirectoryNode" />
+              <item name="HiC_common_tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiC_common_tools" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiC_Tools_for_Lab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiC_Tools_for_Lab" type="462c0819:PsiDirectoryNode" />
+              <item name="HiC_common_tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiC_common_tools" type="462c0819:PsiDirectoryNode" />
               <item name="pyHiC" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiC_Tools_for_Lab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiC_Tools_for_Lab" type="462c0819:PsiDirectoryNode" />
+              <item name="HiC_common_tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiC_common_tools" type="462c0819:PsiDirectoryNode" />
               <item name="pyHiC" type="462c0819:PsiDirectoryNode" />
               <item name="visualization" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -196,7 +226,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/nfs/turbo/umms-drjieliu/proj/4dn/data/scHiC/WTC-11" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -211,8 +241,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.visualize_HiC_and_epigenetics (1)">
-    <configuration name="heatmap_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.example">
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HiC_Tools_for_Lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +250,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/example" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heatmap_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example/example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,7 +263,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="heatmap_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tst (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HiC_Tools_for_Lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,11 +271,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/example" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heatmap_v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example/tst.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,6 +305,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="visualize_HiC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HiC_Tools_for_Lab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyHiC/visualization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="visualize_HiC_and_epigenetics (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HiC_Tools_for_Lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -296,34 +347,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="visualize_HiC_and_epigenetics" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="HiC_Tools_for_Lab" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize_HiC_and_epigenetics.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example" />
+        <item itemvalue="Python.tst (1)" />
+        <item itemvalue="Python.visualize_HiC" />
         <item itemvalue="Python.visualize_HiC_and_epigenetics (1)" />
         <item itemvalue="Python.tst" />
-        <item itemvalue="Python.heatmap_v2" />
-        <item itemvalue="Python.visualize_HiC_and_epigenetics" />
-        <item itemvalue="Python.heatmap_test" />
       </list>
     </recent_temporary>
   </component>
@@ -341,15 +371,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-6" y="24" width="1932" height="1157" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18959913" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40758756" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -365,13 +395,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/extract_region.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1712874894/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="258" column="4" selection-start-line="258" selection-start-column="4" selection-end-line="258" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1712874894/builtins.py" />
     <entry file="file://$PROJECT_DIR$/data/rep1_chr1.txt" />
     <entry file="file://$PROJECT_DIR$/normalization.py" />
     <entry file="file://$PROJECT_DIR$/insulation_score.py" />
@@ -386,9 +410,6 @@
     <entry file="file://$PROJECT_DIR$/utils.py" />
     <entry file="file://$PROJECT_DIR$/heatmap_v2.py" />
     <entry file="file://$PROJECT_DIR$/example.ipynb" />
-    <entry file="file://$PROJECT_DIR$/pyHiC/loading/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyHiC/visualization/heatmap_test.py" />
     <entry file="file://$PROJECT_DIR$/pyHiC/visualization/heatmap_v2.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -400,45 +421,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#81#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyHiC/structures/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyHiC/normalization/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plot.py" />
     <entry file="file://$PROJECT_DIR$/tst.py" />
-    <entry file="file://$PROJECT_DIR$/example/example.py" />
-    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/test.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/pyHiC/structures/insulation_score.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="722">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#86#104#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyHiC/visualization/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="38">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -446,10 +446,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_eQTL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/normalization/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/loading/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/structures/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/ab_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/loading/loading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+          <folding>
+            <element signature="e#92#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/normalization/iterative_correction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pyHiC/structures/AB_compartment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="411">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/tst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -458,49 +533,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pyHiC/normalization/normalization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="-1471">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyHiC/structures/insulation_score.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyHiC/loading/loading.py">
+    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="532">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="9" selection-end-line="28" selection-end-column="11" />
           <folding>
-            <element signature="e#92#110#0" expanded="true" />
+            <element signature="e#81#99#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/example/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="266">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/example/test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyHiC/visualization/visualize_HiC_and_epigenetics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="-1893">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#86#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="198">
-            <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1052">
+            <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
           </first_editor>
           <second_editor />
         </state>
