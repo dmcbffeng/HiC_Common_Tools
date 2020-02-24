@@ -11,7 +11,7 @@
 ### Install from GitHub ###
 You can install the package with following command:
   ```console
-    $ git clone https://github.com/liu-bioinfo-lab/scHiCTools.git
+    $ git clone https://github.com/dmcbffeng/HiC_Common_Tools.git
     $ cd scHiCTools
     $ python setup.py install
   ```
@@ -86,7 +86,39 @@ You can install the package with following command:
  
  **Visualize**
  ```config
- >>> from visualization import *
+ >>> from pyHiC.visualization import *
+ >>> visualize_HiC_epigenetics(HiC, epis, output, fig_width=12.0,
+ ...        vmin=0, vmax=None, cmap='Reds', colorbar=True,
+ ...        colorbar_orientation='vertical',
+ ...        epi_labels=None, x_ticks=None, fontsize=24,
+ ...        epi_colors=None, epi_yaxis=True,
+ ...        heatmap_ratio=0.6, epi_ratio=0.1,
+ ...        interval_after_heatmap=0.05, interval_between_epi=0.01,)
+ ```
+ Visualize matched HiC and epigenetic signals in one figure.
+ Then save the figure as a file.
+ - HiC (numpy.array): Hi-C contact map, only upper triangle is used.
+ - epis (list): epigenetic signals
+ - output (str): the output path. Must in a proper format (e.g., 'png', 'pdf', 'svg', ...).
+ - fig_width (float): the width of the figure. Then the height will be automatically calculated. Default: 12.0
+ - vmin (float): min value of the colormap. Default: 0
+ - vmax (float): max value of the colormap. Will use the max value in Hi-C data if not specified.
+ - cmap (str or plt.cm): which colormap to use. Default: 'Reds'
+ - colorbar (bool): whether to add colorbar for the heatmap. Default: True
+ - colorbar_orientation (str): "horizontal" or "vertical". Default: "vertical"
+ - epi_labels (list): the names of epigenetic marks. If None, there will be no labels at y axis.
+ - x_ticks (list): a list of strings. Will be added at the bottom. THE FIRST TICK WILL BE AT THE START OF THE SIGNAL, THE LAST TICK WILL BE AT THE END.
+ - fontsize (int): font size. Default: 24
+ - epi_colors (list): colors of epigenetic signals
+ - epi_yaxis (bool): whether add y-axis to epigenetic signals. Default: True
+ - heatmap_ratio (float): the ratio of (heatmap height) and (figure width). Default: 0.6
+ - epi_ratio (float): the ratio of (1D epi signal height) and (figure width). Default: 0.1
+ - interval_after_heatmap (float): the ratio of (interval between heatmap and 1D signals) and (figure width). Default: 0.05
+ - interval_between_epi (float): the ratio of (interval between 1D signals) and (figure width). Default: 0.01
+
+ 
+ ```config
+ >>> from pyHiC.visualization import *
  >>> visualize_one_contact_map(mat, vmax=1, save_path=None)
  >>> visualize_two_contact_maps(mat1, mat2, vmax=1, save_path='compare.png')
  ```
@@ -102,17 +134,20 @@ You can install the package with following command:
  
  **Find A/B Compartments**
  ```config
- >>> from AB_compartment import AB_compartment
- >>> ab = AB_compartment(mat)
+ >>> from pyHiC.structures import AB_compartment
+ >>> ab = AB_compartment(mat, n_th_eigenvector=1)
  ```
  Find A/B compartments with the input Hi-C contact map.
  Return a 1-D vector which has the same length with input map,
  sign (+ / -) indicates A or B compartment.
- - mat: (numpy.array, scipy.sparse.coo_matrix)
+ - mat: (numpy.array, scipy.sparse.csr_matrix)
+ - n_th_eigenvector (int): 1 or 2. Usually the 1-st eigenvector corresponds to 
+ A/B compartments, but there might be some exceptions when it corresponds to two arms
+ of a chromosome. If that happens, try to set this arg as 2. Default: 1
  
  **What other?**
  - TAD?
- - Loop? (High computation burden...)
+ - Loop? (High computational burden...)
  - 
 
 

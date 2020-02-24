@@ -3,8 +3,8 @@ from scipy.linalg import eigh
 from ..normalization import normalization
 
 
-def AB_compartment(mat, n_th_eigenvalue=1):
-    assert n_th_eigenvalue in [1, 2]
+def AB_compartment(mat, n_th_eigenvector=1):
+    assert n_th_eigenvector in [1, 2]
 
     norm_mat = normalization(mat, 'OE')
     # Remove zeros
