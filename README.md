@@ -1,4 +1,4 @@
-# Commonly-used HiC Operations for Liu Lab (Python 3) #
+# HiC Tools for Liu Lab (Python 3) #
 ## -- [NOT FINISHED YET] -- ##
 @Author: Fan Feng
 
