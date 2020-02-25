@@ -3,11 +3,12 @@
 @Author: Fan Feng
 
 [1 Installation](#installation)\
-[2 Loading Hi-C Contact Maps](#load-hi-c-contact-maps)\
-[3 Normalization](#normalization)\
-[4 Visualization](#visualization)\
-[5 Structure Calling](#structure-calling)\
-[6 Comparing Contact Maps](#comparing-contact-maps)
+[2 Statistics](#statistics)\
+[3 Hi-C Contact Map Loading](#hi-c-contact-map-loading)\
+[4 Normalization](#normalization)\
+[5 Visualization](#visualization)\
+[6 Structure Calling](#structure-calling)\
+[7 Contact Map Comparing](#contact-map-comparing)
 
 
 # Installation
@@ -27,7 +28,7 @@ You can install the package with following command:
   ```
 
 
-# Loading Hi-C Contact Maps
+# Hi-C Contact Map Loading
  **Supported Formats**
  - npy: numpy.array / numpy.matrix
  - npz: scipy.sparse.coo_matrix / csr_matrix
@@ -73,6 +74,9 @@ You can install the package with following command:
  - gzip (bool): whether zipped file. Default: False
  - sparse: (bool) default: True. If True, store with scipy.sparse.csr_matrix; if false, with numpy.array.
  
+
+# Statistics
+ (to be done...)
 
 # Normalization
  ```config
@@ -171,7 +175,7 @@ You can install the package with following command:
  - 
 
 
-# Comparing Contact Maps
+# Contact Map Comparing
  **HiCRep**
  
  ..to be done...
