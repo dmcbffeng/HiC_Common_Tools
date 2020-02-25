@@ -9,7 +9,7 @@
 [5 Visualization](#visualization)\
 [6 Structure Calling](#structure-calling)\
 [7 Contact Map Comparing](#contact-map-comparing)
-
+[8 Other Tools](#other-tools)
 
 # Installation
 **Required Packages**
@@ -167,7 +167,7 @@ You can install the package with following command:
  - mat: (numpy.array, scipy.sparse.csr_matrix)
  - n_th_eigenvector (int): 1 or 2. Usually the 1-st eigenvector corresponds to 
  A/B compartments, but there might be some exceptions when it corresponds to two arms
- of a chromosome. If that happens, try to set this arg as 2. Default: 1
+ of a chromosome. If that happens, try to set this arg to 2. Default: 1
  
  **What other?**
  - TAD?
@@ -177,6 +177,17 @@ You can install the package with following command:
 
 # Contact Map Comparing
  **HiCRep**
+ ```config
+ >>> from pyHiC.reproducibility import HiCRep
+ >>> score = HiCRep(HiC_mat_1, HiC_mat_2, n_strata=10, h=1)
+ ```
+ Calculate the similarity of two contact maps with HiCRep score.
+ - HiC1, HiC2 (numpy.array or sp.csr_matrix): two Hi-C contact maps 
+ - n_strata (int): Use first n strata (closest to the diagonal). Default: 10
+ - h (int): size of smoothing window. Default: 1\
+
+# Other Tools 
+
  
  ..to be done...
 
