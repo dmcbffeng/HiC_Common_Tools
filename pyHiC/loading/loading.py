@@ -92,8 +92,11 @@ def load_HiC(file, format=None, custom_format=None, header=False,
         G = nx.Graph()
         for i in range(size):
             G.add_node(i)
+            G.add_edge(i, i, weight=np.finfo(float).eps)
 
         for p1, p2, val in gen:
+            if p1 < start_pos or p2 < start_pos:
+                continue
             if end_pos != -1:
                 if p1 >= end_pos or p2 >= end_pos:
                     continue
@@ -103,6 +106,7 @@ def load_HiC(file, format=None, custom_format=None, header=False,
                 if max_pos > size:
                     for i in range(size, max_pos + 1):
                         G.add_node(i)
+                        G.add_edge(i, i, weight=np.finfo(float).eps)
                     size = max_pos + 1
 
             if G.has_edge(p1, p2):
