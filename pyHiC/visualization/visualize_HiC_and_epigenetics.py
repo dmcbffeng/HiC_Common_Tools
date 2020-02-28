@@ -52,10 +52,10 @@ def visualize_HiC_epigenetics(HiC, epis, output, fig_width=12.0,
     # Define the space for each row (heatmap - interval - signal - interval - signal ...)
     rs = [heatmap_ratio, interval_after_heatmap] + [epi_ratio, interval_between_epi] * len(epis)
     rs = np.array(rs[:-1])
-    rs = rs / np.sum(rs)  # normalize to 1 (ratios)
 
     # Calculate figure height
     fig_height = fig_width * np.sum(rs)
+    rs = rs / np.sum(rs)  # normalize to 1 (ratios)
     fig = plt.figure(figsize=(fig_width, fig_height))
 
     # Split the figure into rows with different heights
